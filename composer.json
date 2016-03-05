@@ -11,6 +11,7 @@
             "email": "crodas@php.net"
         }
     ],
+    "version": "v0.1.0",
     "minimum-stability": "stable",
     "require": {
         "crodas/sql-parser": "^0.1.3"
