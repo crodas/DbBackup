@@ -33,10 +33,12 @@ class SimpleTest extends PHPUnit_Framework_TestCase
         mkdir(__DIR__ . '/temp');
 
         $pdo = new PDO("mysql:host=localhost", "root");
-        $pdo->exec("drop database test_1");
-        $pdo->exec("drop database test_2");
-        $pdo->exec("create database test_1");
-        $pdo->exec("create database test_2");
+        foreach (['test_1', 'test_2'] as $db) {
+            try {
+                $pdo->exec("drop database $db");
+            } catch (\Exception $e) {};
+            $pdo->exec("create database $db");
+        }
     }
 
     /**

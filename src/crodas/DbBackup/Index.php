@@ -86,7 +86,6 @@ class Index
         $delete = array();
         $this->dbh->query("COMMIT;");
         $this->dbh->query("BEGIN;");
-        //var_dump(iterator_to_Array($this->dbh->query("Select * from Memory.rows")));
         foreach ($this->dbh->query("SELECT r.row_id FROM rows r WHERE r.row_id not in (SELECT m.rowid FROM Memory.rows m)") as $row) {
             $row = json_decode($row['row_id']);
             $table  = array_shift($row);
