@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "3d0bd8cd5db3633aca5b361a49650af8",
+    "content-hash": "9b133d772fd7f1bbbb8572a1abf966fc",
+    "packages": [
+        {
+            "name": "crodas/sql-parser",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crodas/SQLParser.git",
+                "reference": "1302e381e90dd28e4e075ffbe2f604a612949055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crodas/SQLParser/zipball/1302e381e90dd28e4e075ffbe2f604a612949055",
+                "reference": "1302e381e90dd28e4e075ffbe2f604a612949055",
+                "shasum": ""
+            },
+            "require-dev": {
+                "crodas/autoloader": "^0.1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "César Rodas",
+                    "email": "crodas@php.net"
+                }
+            ],
+            "description": "Easiest way to parse SQL",
+            "time": "2016-03-05 05:25:39"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

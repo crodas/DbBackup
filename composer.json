@@ -1,0 +1,18 @@
+{
+    "name": "crodas/db-backup",
+    "description": "Incremental Database dump tool",
+    "type": "library",
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "authors": [
+        {
+            "name": "Cesar Rodas",
+            "email": "crodas@php.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "crodas/sql-parser": "^0.1.3"
+    }
+}
